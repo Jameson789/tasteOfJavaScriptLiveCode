@@ -10,10 +10,12 @@ body {
 header, footer {
   padding: 20px;
   background-color: #f0f0f0;
+  transition: background-color 5s, color 5s;
 }
 
 main {
   padding: 20px;
+  transition: background-color 5s, color 5s;
 }
 
 button {
@@ -21,4 +23,24 @@ button {
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode header, body.dark-mode footer {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode main {
+  background-color: darkblue;
+  color: white;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+#instructions {
+  transition: transform 1s;
 }
